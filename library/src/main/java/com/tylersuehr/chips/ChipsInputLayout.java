@@ -37,7 +37,7 @@ import java.util.regex.Pattern;
  */
 public class ChipsInputLayout extends MaxHeightScrollView
         implements FilterableChipsAdapter.OnFilteredChipClickListener {
-    /* Stores mutable properties for our library */
+    /* Stores mutable properties fsador our library */
     private final ChipOptions mOptions;
     /* Stores the source of all the chips */
     private ChipDataSource mDataSource;
@@ -54,8 +54,8 @@ public class ChipsInputLayout extends MaxHeightScrollView
     private final ChipsAdapter mChipsAdapter;
 
     /* Displays filtered chips */
-    private FilterableRecyclerView mFilteredRecycler;
-    private FilterableChipsAdapter mFilteredAdapter;
+    public FilterableRecyclerView mFilteredRecycler;
+    public FilterableChipsAdapter mFilteredAdapter;
 
     /* Stores reference to callback for text changed events */
     private OnChipsInputTextChangedListener mTextChangedListener;
@@ -80,8 +80,7 @@ public class ChipsInputLayout extends MaxHeightScrollView
         inflate(c, R.layout.chips_input_view, this);
 
         // Setup the chips recycler view
-        mChipsAdapter = new ChipsAdapter(
-                mDataSource, loadChipsInput(), mOptions);
+        mChipsAdapter = new ChipsAdapter(mDataSource, loadChipsInput(), mOptions);
         mChipsRecycler = findViewById(R.id.chips_recycler);
         mChipsRecycler.addItemDecoration(new DefaultChipDecor(c));
         mChipsRecycler.setLayoutManager(ChipsLayoutManager.newBuilder(c).build());

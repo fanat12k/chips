@@ -35,4 +35,4 @@ dependencies {
 }
 
 apply plugin: 'com.github.dcendents.android-maven'
-group='com.github.tylersuehr7'
+group='com.github.fanat12k'

@@ -44,7 +44,7 @@ class FilterableRecyclerView extends RecyclerView implements ChipComponent {
 
   @Override
   public void setChipOptions(ChipOptions options) {
-    this.recyclerViewFadeInHeight = options.recyclerViewFadeInHeight;
+    this.recyclerViewFadeInHeight = options.getRecyclerViewFadeInHeight();
     ViewCompat.setElevation(this, options.mFilterableListElevation);
     if (options.mFilterableListBackgroundColor != null) {
       getBackground().setColorFilter(options.mFilterableListBackgroundColor

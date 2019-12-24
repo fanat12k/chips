@@ -26,7 +26,7 @@ import android.widget.Filterable;
  * @author Tyler Suehr
  * @version 1.0
  */
-class FilterableRecyclerView extends RecyclerView implements ChipComponent {
+public class FilterableRecyclerView extends RecyclerView implements ChipComponent {
   /* Used to find its location in window */
   private ChipsInputLayout mChipsInput;
   /* Used to trigger filtering and receive callbacks to show or hide this */

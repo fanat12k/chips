@@ -54,7 +54,7 @@ public class ChipsInputLayout extends MaxHeightScrollView
     private final ChipsAdapter mChipsAdapter;
 
     /* Displays filtered chips */
-    public FilterableRecyclerView mFilteredRecycler;
+    private FilterableRecyclerView mFilteredRecycler;
     public FilterableChipsAdapter mFilteredAdapter;
 
     /* Stores reference to callback for text changed events */
@@ -89,6 +89,10 @@ public class ChipsInputLayout extends MaxHeightScrollView
 
         // Set the max height from options
         setMaxHeight(Utils.dp(40) * mOptions.mMaxRows);
+    }
+
+    public FilterableRecyclerView getmFilteredRecycler() {
+        return mFilteredRecycler;
     }
 
     @Override

@@ -119,6 +119,15 @@ public class FilterableRecyclerView extends RecyclerView implements ChipComponen
   /**
    * Uses alpha animation to fade out the current view if it's not gone.
    */
+
+  public void fadeOutWithOutAnimation() {
+    if (getVisibility() == GONE) {
+      return;
+    }
+
+    setVisibility(GONE);
+  }
+
   public void fadeOut() {
     if (getVisibility() == GONE) {
       return;

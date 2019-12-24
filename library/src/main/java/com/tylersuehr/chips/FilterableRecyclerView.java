@@ -85,7 +85,7 @@ class FilterableRecyclerView extends RecyclerView implements ChipComponent {
   /**
    * Uses alpha animation to fade in the current view if it's not visible.
    */
-  void fadeIn() {
+  public void fadeIn() {
     if (getVisibility() == VISIBLE) {
       return;
     }
@@ -119,7 +119,7 @@ class FilterableRecyclerView extends RecyclerView implements ChipComponent {
   /**
    * Uses alpha animation to fade out the current view if it's not gone.
    */
-  void fadeOut() {
+  public void fadeOut() {
     if (getVisibility() == GONE) {
       return;
     }
